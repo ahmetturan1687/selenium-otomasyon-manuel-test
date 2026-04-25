@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="AutomationExercise Test Suite" verbose="1">
+
+    <!-- ── UI Testleri ── -->
+    <test name="UI Tests - Chrome">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="ui.LoginTest"/>
+            <class name="ui.ProductTest"/>
+        </classes>
+    </test>
+
+    <!-- ── API Testleri ── -->
+    <test name="API Tests">
+        <classes>
+            <class name="api.UserApiTest"/>
+        </classes>
+    </test>
+
+</suite>
