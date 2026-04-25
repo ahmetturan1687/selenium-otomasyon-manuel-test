@@ -141,7 +141,7 @@ public class UserApiTest {
             .contentType(ContentType.URLENC)
             .formParam("name", testName)
             .formParam("email", testEmail)
-            .formParam("password", "Test1234!")
+            .formParam("password", "3B58Hve35kc7@Cq")
             .formParam("title", "Mr")
             .formParam("birth_date", "15")
             .formParam("birth_month", "June")
@@ -188,7 +188,7 @@ public class UserApiTest {
         Response response = given()
             .contentType(ContentType.URLENC)
             .formParam("email", testEmail)
-            .formParam("password", "Test1234!")
+            .formParam("password", "3B58Hve35kc7@Cq")
         .when()
             .delete("/deleteAccount");
 
